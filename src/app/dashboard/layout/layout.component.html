@@ -1,0 +1,143 @@
+<div class="row">
+  <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-primary nav-fill w-100" >
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <span class="navbar-text ml-auto">
+        <h5>Result Processing Sheet</h5>
+      </span>
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="home">Home <span class="glyphicon glyphicon-home"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="admin">Admin</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action
+             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="" (click)="logOut()">Log Out</a>
+            </div>
+         </li>
+    </ul>
+   </div>
+  </nav>
+</div>
+
+<div class="row" style="width: 100%;position: relative;">
+  <div class="col-md-2">
+      <ul class="list-group" style="margin-top:50px;height: 90vh;overflow: scroll;">
+        <li class="list-group-item">
+          <h4>Universal Library</h4>
+        </li>
+        <li>
+          <a class="list-group-item" data-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-graduation-cap"></i>
+            Student
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+          <ul class="collapse" id="collapseExample">
+            <li><a routerLink="#">Register</a></li>
+            <li><a routerLink="#">Edit</a></li>
+            <li><a routerLink="#">Author</a></li>
+            
+          </ul>
+        </li>
+        <li>
+          <a class="list-group-item" data-toggle="collapse" href="#collapse"  aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-user-circle"></i>
+             Teachers
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+          <ul class="collapse" id="collapse">
+            <li><a routerLink="#">Register</a></li>
+            <li><a routerLink="#">Exit</a></li>
+            
+          </ul>
+        </li>
+
+        <li>
+          <a class="list-group-item" data-toggle="collapse" href="#setting"  aria-expanded="false" aria-controls="setting">
+            <i class="fa fa-cog"></i>
+              Setting
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+          <ul class="collapse" id="setting">
+            <li><a routerLink="#">Subject</a></li>
+            <li><a routerLink="#">Grading</a></li>
+            <li><a routerLink="#">Exam</a></li>
+            
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <a routerLink="">
+          <i class="fa fa-user"></i>
+            Exam 
+          <i class="fa fa-angle-double-down"></i>
+         </a>
+      </li>
+      <li class="list-group-item">
+        <a routerLink="">
+        <i class="fa fa-user"></i>
+          Exam 
+        <i class="fa fa-angle-double-down"></i>
+       </a>
+    </li>        <li class="list-group-item">
+      <a routerLink="">
+      <i class="fa fa-user"></i>
+        Exam 
+      <i class="fa fa-angle-double-down"></i>
+     </a>
+  </li>        <li class="list-group-item">
+    <a routerLink="">
+    <i class="fa fa-user"></i>
+      Exam 
+    <i class="fa fa-angle-double-down"></i>
+   </a>
+</li>        <li class="list-group-item">
+  <a routerLink="">
+  <i class="fa fa-user"></i>
+    Exam 
+  <i class="fa fa-angle-double-down"></i>
+ </a>
+</li>        <li class="list-group-item">
+  <a routerLink="">
+  <i class="fa fa-user"></i>
+    Exam 
+  <i class="fa fa-angle-double-down"></i>
+ </a>
+</li>        <li class="list-group-item">
+  <a routerLink="">
+  <i class="fa fa-user"></i>
+    Exam 
+  <i class="fa fa-angle-double-down"></i>
+ </a>
+</li>        <li class="list-group-item">
+  <a routerLink="">
+  <i class="fa fa-user"></i>
+    Exam 
+  <i class="fa fa-angle-double-down"></i>
+ </a>
+</li>
+</ul>
+  </div>
+  <div class="col-md-10" style="height: 100vh;overflow: scroll;"> 
+    <div class="row" style="margin-top:73px;">
+      <div class="container">
+    <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </div>
+
+</div>

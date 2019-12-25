@@ -1,0 +1,51 @@
+    <table #dataTable class="display table table-striped table-bordered nowrap"  style="width:100%;overflow: scroll;">
+      <thead>
+          <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>Adress</th>
+              <th>Contact</th>
+              <th>joining_date</th>
+              <th>Responsibilte</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Birth Date</th>
+              <th>Action</th>
+  
+          </tr>
+      </thead>
+      <tbody *ngIf="allTeachers?.length != 0">
+          <tr *ngFor="let hero of allTeachers | async">
+              <td>{{hero.id}}</td>
+              <td>{{hero.name}}</td>
+              <td>{{hero.address}}</td>
+              <td>{{hero.contact}}</td>
+              <td>{{hero.joining_date}}</td>
+              <td>{{hero.responsibleto}}</td>
+              <td>{{hero.username}}</td>
+              <td>{{hero.password}}</td>
+              <td>{{hero.birth_date}}</td>
+              <td><button class=" btn btn-info" routerLink="/heroes" (click)="edit()"><i class="fa fa-pencil-square-o"></i></button><Button class="btn btn-danger"><i class="fa fa-trash-o"></i></Button></td>
+          </tr>
+         
+      </tbody>
+      <tbody *ngIf="allTeachers?.length == 0">
+          <tr>
+            <td colspan="3" class="no-data-available">No data!</td>
+          </tr>
+        <tbody>
+      <tfoot>
+          <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Adress</th>
+            <th>Contact</th>
+            <th>joining_date</th>
+            <th>Responsibilte</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Birth Date</th>
+            <th>Action</th>
+          </tr>
+      </tfoot>
+    </table>

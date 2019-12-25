@@ -1,0 +1,16 @@
+
+<div class="container" style="display: flex;justify-content: center;align-items: center;height: 100vh;">
+  <div class="card" style="width: 50%;">
+    <div class="card-body">
+      <h5 class="card-title">Login Form</h5>
+      <form id="auth-form" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div id="auth-from-roup" class="form-group">
+          <input id="auth-fname" name="username" class="form-control form-control-sm" placeholder="username" formControlName="username"><br>
+          <input id="auth-lname" type="password" name="password" class="form-control form-control-sm" placeholder="Password" formControlName="password">
+        </div>
+        <button id="auth-submit" color="info" class="btn btn-info" [disabled]="loginForm.invalid"  type="submit">Login</button>
+
+      </form>
+      </div>
+    </div>
+  </div>
